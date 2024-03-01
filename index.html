@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                <h1>My Portfolio</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
-                    <li><a href="header">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#project">My Projects</a></li>
                     <li><a href="#services">My Services</a></li>
                     <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -33,7 +35,7 @@
         <div class="container2">
             <div class="row">
                 <div id="about-col-1">
-                    <img src="./assets/1wtfml.jpg">
+                     <img src="./assets/45.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-T">About Me</h1>
@@ -166,7 +168,7 @@
                         <p><i class="fa-solid fa-square-phone"></i>09158425356</p>
                         <div class="social-icons">
                             <a href="https://github.com/Ayomi789"><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://twitter.com/Mide0715"><i class="fa-brands fa-x-twitter"></i></a>
                             <a href="https://www.linkedin.com/in/abdullateef-salako-18764b2a9/"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                         <a href="./assets/Salako.cv.pdf" id="BTN">Download CV</a>
@@ -184,3 +186,13 @@
          </div>
 </body>
 </html>
+
+<script>
+ var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right ="0"
+    }
+    
+    function closemenu(){
+        sidemeu.style.right ="-200px"
+    }</script>
